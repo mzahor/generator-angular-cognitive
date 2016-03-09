@@ -1,0 +1,33 @@
+/* global module */
+
+'use strict';
+
+describe('Unit: <%= componentPascalName %>', function() {
+
+    let element;
+    let scope;
+
+    beforeEach(function() {
+        angular.mock.module('app.<%= moduleName %>');
+
+        angular.mock.inject(($compile, $rootScope) => {
+            scope = $rootScope;
+            let jElement = angular.element(
+                '<<%= componentDashedName %>></<%= componentDashedName %>>'
+            );
+
+            $compile(jElement)(scope);
+            scope.$digest();
+            element = jElement[0];
+        });
+    });
+
+    it('should render template', function() {
+        expect(element.querySelector('.<%= componentDashedName %>-component')).not.toBe(null);
+    });
+
+    function html() {
+        return element.innerHTML;
+    }
+
+});

@@ -1,0 +1,23 @@
+function <%= componentPascalName %>Component() {
+
+    return {
+        restrict: 'E',
+        template: `
+            <div class="<%= componentDashedName %>-component">
+            </div>
+        `,
+        bindings: {
+        },
+        controller: <%= componentPascalName %>ComponentController
+    };
+
+    function <%= componentPascalName %>ComponentController() {
+        // var ctrl = this;
+    }
+}
+
+export default {
+    name: '<%= componentCamelName %>',
+    type: 'component',
+    fn: <%= componentPascalName %>Component
+};
