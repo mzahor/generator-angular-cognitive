@@ -1,0 +1,23 @@
+function <%= servicePascalName %>Registrator() {
+    return <%= servicePascalName %>;
+
+    function <%= servicePascalName %>(Restangular) {
+        'ngInject';
+
+        var service = {
+            dummyMethod
+        };
+
+        function dummyMethod() {
+            return 'dummy';
+        }
+
+        return service;
+    }
+}
+
+export default {
+    name: '<%= servicePascalName %>',
+    type: 'service',
+    fn: <%= servicePascalName %>Registrator,
+}

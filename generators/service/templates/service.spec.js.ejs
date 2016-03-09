@@ -1,0 +1,24 @@
+/* global module */
+
+'use strict';
+
+describe('Unit: <%= servicePascalName %>', function() {
+
+    let service;
+
+    beforeEach(function() {
+        angular.mock.module('app.<%= moduleName %>');
+
+        angular.mock.inject((_<%= servicePascalName %>_) => {
+            service = _<%= servicePascalName %>_;
+        });
+    });
+
+    describe('dummyMethod', function() {
+        it('should return dummy string', function() {
+            let result = service.dummyMethod();
+            expect(result).toBe('dummy');
+        });
+    });
+
+});
