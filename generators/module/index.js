@@ -33,7 +33,7 @@ module.exports = yeoman.generators.Base.extend({
         this.fs.copyTpl(
             this.templatePath('index.js'),
             this.destinationPath(
-                `${config.appPath}/${viewCtx.moduleName}/index.js`
+                `${config.appPath}/${viewCtx.moduleCamelName}/index.js`
             ),
             viewCtx
         );
