@@ -108,8 +108,6 @@ Generator.prototype.gitignore = function() {
 
 Generator.prototype.packageJSON = function() {
     var packageFile = this.templatePath('package.json');
-    console.log('here');
-    console.log(packageFile);
     var pkg = this.fs.readJSON(packageFile);
     var exclude = [
         'author',
