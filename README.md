@@ -16,6 +16,30 @@ Then generate your new project:
 yo angular-cognitive
 ```
 
+## Available generators:
+
+- component (`yo angular-cognitive:component`)
+- directive (`yo angular-cognitive:directive`)
+- service (`yo angular-cognitive:service`)
+- filter (`yo angular-cognitive:filter`)
+- module (`yo angular-cognitive:module`)
+
+## Registration
+
+Components, directives, services and filters will be registered in the application automatically. Module needs manual registration, though. After you've generated a module, edit main.js file:
+```js
+// add import
+import './yourNewModule';
+
+// create and bootstrap application
+const requires = [
+    // ... list of dependencies
+    // add your new module dependency
+    'app.yourNewModule',
+];
+```
+And you're good to go.
+
 ## Getting To Know Yeoman
 
 Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he&#39;s very easy to work with. If you think he&#39;s too opinionated, he can be easily convinced. Feel free to [learn more about him](http://yeoman.io/).
