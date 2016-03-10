@@ -17,7 +17,7 @@ module.exports = yeoman.generators.Base.extend({
         }, {
             type: 'input',
             name: 'serviceName',
-            message: 'ServiceName name:',
+            message: 'ServiceName name ("Service" suffix will be added automatically):',
             store: true,
         }];
 

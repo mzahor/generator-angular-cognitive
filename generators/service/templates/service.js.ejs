@@ -1,7 +1,7 @@
-function <%= servicePascalName %>Registrator() {
-    return <%= servicePascalName %>;
+function <%= servicePascalName %>ServiceRegistrator() {
+    return <%= servicePascalName %>Service;
 
-    function <%= servicePascalName %>() {
+    function <%= servicePascalName %>Service() {
         'ngInject';
 
         var service = {
@@ -17,7 +17,7 @@ function <%= servicePascalName %>Registrator() {
 }
 
 export default {
-    name: '<%= servicePascalName %>',
+    name: '<%= servicePascalName %>Service',
     type: 'service',
-    fn: <%= servicePascalName %>Registrator,
+    fn: <%= servicePascalName %>ServiceRegistrator,
 }

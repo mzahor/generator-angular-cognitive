@@ -2,15 +2,15 @@
 
 'use strict';
 
-describe('Unit: <%= servicePascalName %>', function() {
+describe('Unit: <%= servicePascalName %>Service', function() {
 
     let service;
 
     beforeEach(function() {
         angular.mock.module('app.<%= moduleName %>');
 
-        angular.mock.inject((_<%= servicePascalName %>_) => {
-            service = _<%= servicePascalName %>_;
+        angular.mock.inject((_<%= servicePascalName %>Service_) => {
+            service = _<%= servicePascalName %>Service_;
         });
     });
 
