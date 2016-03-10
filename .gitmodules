@@ -1,0 +1,3 @@
+[submodule "generators/app/templates/angular-boilerplate"]
+	path = generators/app/templates/angular-boilerplate
+	url = https://github.com/mzahor/angular-boilerplate
