@@ -2,7 +2,7 @@
 
 'use strict';
 
-describe('Unit: <%= directivePascalName %>', function() {
+describe('Unit: <%= directivePascalName %>Directive', function() {
 
     let element;
     let scope;
