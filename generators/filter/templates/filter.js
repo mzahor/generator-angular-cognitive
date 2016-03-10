@@ -1,7 +1,7 @@
 function <%= filterPascalName %>Registrator() {
     return <%= filterPascalName %>;
 
-    function <%= filterPascalName %> () {
+    function <%= filterPascalName %>() {
         'ngInject';
 
         return function(input) {

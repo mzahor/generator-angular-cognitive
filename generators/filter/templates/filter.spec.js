@@ -2,7 +2,7 @@
 
 'use strict';
 
-describe('Unit: <%= filterPascalName %>', function() {
+describe('Unit: <%= filterPascalName %>Filter', function() {
 
     let filter;
 
