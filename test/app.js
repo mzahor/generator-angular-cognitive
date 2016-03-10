@@ -12,7 +12,23 @@ describe('generator-angular-cognitive:app', function() {
 
     it('creates files', function() {
         assert.file([
-            'package.json'
+            'package.json',
+            'app/js/main.js',
+            'app/index.html',
+            'gulp/index.js',
+            'test/karma.conf.js',
+            'test/protractor.conf.js',
         ]);
+
+        assert.noFile([
+            '.git',
+        ]);
+    });
+
+    it('sets the name', function() {
+        assert.fileContent(
+            'package.json',
+            'testApp'
+        );
     });
 });
