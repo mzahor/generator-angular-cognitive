@@ -31,14 +31,14 @@ describe('generator-angular-cognitive:directive', function() {
             );
         });
 
-        it('should generate component link function', function() {
+        it('should generate directive link function', function() {
             assert.fileContent(
                 'app/js/movies/directives/focus.on.directive.js',
                 'link: function FocusOnDirectiveLink'
             );
         });
 
-        it('should generate component export object', function() {
+        it('should generate directive export object', function() {
             assert.fileContent(
                 'app/js/movies/directives/focus.on.directive.js',
                 'name: \'focusOn\''
